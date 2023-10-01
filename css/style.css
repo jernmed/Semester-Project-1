@@ -1,0 +1,40 @@
+:root{
+    --h1TextSize: 2.66em;
+    --h2TextSize: 1.90em;
+    --h3TextSize: 1.52em;
+    --h4TextSize: 1.14em;
+    --h5TextSize: 1em;
+    --pTextSize: 1em;
+    --smTextSize: 0.85em;
+
+    --shadowColor: #47806d1b;
+    --bgWhite: #ffffff;
+    --bgBlack: #232527;
+
+    --primaryColor : #47806d;
+    --primaryBgBody : #e1ebe8;
+    --primaryBgFoot : #373c3e;
+
+    --textWhite : #ffffff;
+    --textBlack : #212121;
+
+    --selectionBg : #64877b;
+    --selectionText : #f5fffc;
+
+    --shadowConfig : 0 0 30px var(--shadowColor);
+}
+
+::-webkit-scrollbar{
+    width: 10px
+}
+::-webkit-scrollbar-track{
+    background-color: var(--selectionBg);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primaryBgBody);
+    border-radius: 10px;
+}
+::selection{
+    background-color: var(--selectionBg);
+    color: var(--selectionText);
+}
