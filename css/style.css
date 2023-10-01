@@ -109,3 +109,74 @@ nav > div{
     color: var(--textWhite);
     border-radius: unset;
 }
+
+main::before{
+    content: "";
+    top: 0; left: 0;
+    position: fixed;
+    width: 100%; height: 100%;
+    background-image: linear-gradient(0deg, var(--primaryBgBody) -50% var(--bgWhite) 50%);
+    z-index: 0;
+}
+
+section{
+    position: relative;
+    background-color: var(--bgWhite);
+    color: var(--textBlack);
+    box-sizing: border-box;
+    padding: 50px 5px;
+    box-shadow: var(--shadowConfig);
+}
+
+.hero-banner,
+.sub-hero-banner{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 20;
+}
+.hero-banner{
+    animation: hero-slideshow 10s infinite;
+}
+.sub-hero-banner{
+    height: 60vh;
+}
+
+.hero-banner::before,
+.sub-hero-banner::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: var(--primaryColor);
+    opacity: 0.6;
+    filter: brightness(50%);
+    background-position: center;
+}
+
+.hero-title{
+    position: relative;
+    width: 50%;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.hero-socials{
+    position: absolute;
+    height: 80%;
+    top: 50%; right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-socials > h4{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+}
