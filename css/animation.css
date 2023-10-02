@@ -1,7 +1,7 @@
 :root{
-    --slideImage1 : url('../images/scott-webb-102825.webp');
-    --slideImage2 : url('../images/exhibition-1863344_1920.webp');
-    --slideImage3 : url('../images/genoa-956405_1920.webp');
+    --slideImage1 : url('images/scott-webb-102825.webp');
+    --slideImage2 : url('images/exhibition-1863344_1920.webp');
+    --slideImage3 : url('images/genoa-956405_1920.webp');
 }
 
 @keyframes hero-slideshow {
