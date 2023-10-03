@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'lobster-two';
+    src: url('../fonts/LobsterTwo-Regular.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'lobster-two';
+    src: url('../fonts/LobsterTwo-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/LobsterTwo-Regular.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/LobsterTwo-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Chintzy';
+    src: url('../fonts/ChintzyCpuBrk-q6P6.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Chintzy';
+    src: url('../fonts/ChintzyCpuShadowBrk-VMZy.ttf');
+    font-weight: bold;
+    font-display: swap;
+}
+
+.ff-lobster{
+    font-family: 'lobster-two';
+}
+
+.fc-white{
+    color: var(--textWhite);
+}
+
+.fc-primary{
+    color: var(--primaryColor);
+}
+
+.fw-normal{
+    font-weight: normal !important;
+}
+.fw-bold{
+    font-weight: bold !important;
+}
+
+.ta-center{
+    text-align: center;
+}
