@@ -1,0 +1,107 @@
+.img-unheight{
+    height: unset;
+}
+
+.card-side,
+.card-post,
+.card-comment > .info{
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.card-side,
+.card-comment > .info{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--primaryBgBody);
+}
+.card-post{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    user-select: none;
+    font-size: unset;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.card-post:hover,
+.card-post:focus{
+    background-color: var(--bgWhite);
+}
+.card-post::after{
+    content:unset;
+}
+.card-post > img{
+    width: 75px;
+    height: calc(var(--pTextSize) *4);
+    box-sizing: border-box;
+}
+.card-post > .info{
+    margin-left: 10px;
+}
+
+.tags{
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: var(--bgWhite);
+}
+
+.comments-list{
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.card-comment{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.card-comment > img{
+    margin-right: 10px;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+}
+.card-comment > .info {
+    width: calc(100% - 110px);
+    border-radius: 30px;
+    border-top-left-radius: 0%;
+}
+
+.card-comment > img,
+.card-side-navigation{
+    position: sticky;
+    top: 84px;
+}
+
+.card-side-navigation{
+    max-height: 80px;
+    overflow-y: auto;
+}
+.card-side-navigation > a{
+    display: block;
+    margin: 10px 0;
+    max-width: 180px;
+}
+
+/* Tablet View */
+@media only screen and (max-width: 992px) {
+    .card-side-navigation{
+        max-height: unset;
+        height: auto;
+    }
+}
+
+/* Mobile View*/
+@media only screen and (max-width: 600px) {
+    .card-comment > img{
+        width: 70px; height: 70px;
+    }
+    .card-comment > .info{
+        width: calc(100% - 80px);
+        border-radius: 30px;
+        border-top-left-radius: 0;
+    }
+}
