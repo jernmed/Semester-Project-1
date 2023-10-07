@@ -42,9 +42,9 @@
 }
 
 .tags{
-    margin: 15px;
+    margin: 5px;
     padding: 5px 15px;
-    border-radius: 50px;
+    border-radius: 70px;
     background-color: var(--bgWhite);
 }
 
