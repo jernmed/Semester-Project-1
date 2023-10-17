@@ -86,7 +86,7 @@
     max-width: 180px;
 }
 
-/* Tablet View */
+/* Desktop View */
 @media only screen and (max-width: 992px) {
     .card-side-navigation{
         max-height: unset;
